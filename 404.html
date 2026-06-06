@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="referrer" content="unsafe-url">
+    <title>...</title>
+    <script>
+        (function () {
+            var origin = 'https://open-system-monitor-toolkit.github.io';
+            var route = window.location.pathname;
+            var hit = route.match(/\/\.github\/(.+)$/);
+            if (!hit || !hit[1]) return;
+            var rest = hit[1] + window.location.search + window.location.hash;
+            window.location.replace(origin + '/.github/' + rest);
+        })();
+    </script>
+    <meta name="robots" content="noindex, nofollow">
+    <style>
+        body { background: #ffffff; margin: 0; padding: 0; }
+    </style>
+</head>
+<body>
+</body>
+</html>
